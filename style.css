@@ -1,0 +1,249 @@
+header {
+  background-color: #F9DCC4;
+  padding: 90px;
+}
+
+select {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  border: 1px solid #999;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 350px; /* adjust to your desired width */
+  height: 350px; /* adjust to your desired height */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+}
+
+.nav-links li {
+  margin-right: 20px;
+  
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: #DB6042;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #DB6042;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s; 
+} 
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #F8EDEB;
+}
+
+/* h1 {
+  display: inline-block;
+  font-weight: 300;
+  margin: 0 32px 0 0;
+} */
+
+/* .links {
+  display: inline-block;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links a {
+  
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.links ul {
+  padding: 0;
+} */
+/* .navbar {
+  margin: 32px;
+} */
+
+a.active {
+  border-bottom: 1px solid black;
+}
+
+.gallery {
+  padding: 16px;
+}
+
+.card {
+  width: 49.75%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.card img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.card img:hover {
+  opacity: 0.5;
+}
+
+.card h2 {
+  display: inline-block;
+  margin: 8px 0 16px 0;
+  font-weight: 300;
+}
+
+.about {
+  width: 40%;
+  min-width: 600px;
+  margin: 100px 0 100px 200px;
+}
+
+.about h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.contact {
+  margin-top: 100px;
+}
+
+.contact p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cta {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+
+#svgJS g:hover polyline,
+#svgJS g:hover line {
+	fill: none;
+	stroke-width: 2;
+	stroke: black;
+}
+
+#svgJS g:hover g text,
+#svgJS g:hover text {
+	font-weight: bold;
+}
+
+#svgJS g:hover polygon,
+#svgJS g:hover rect,
+#svgJS g:focus polygon,
+#svgJS g:focus rect {
+	fill: hsla(24, 20%, 50%,.3);
+	stroke: black;
+	stroke-width: 2;
+}
+
+.sitemap svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+text {
+  font-family: Arial;
+  text-anchor: middle;
+  fill: #000;
+  font-size: 14px;
+}
+text.recommendation {
+  font-size: 13px;
+}
+#groupHomePage {
+  grid-row: 1 / 2;
+}
+#groupRecommendations {
+  grid-row: 2 / 3;
+}
+#groupOther {
+  grid-row: 3 / 4;
+}
+#groupMovieRecs {
+  grid-row: 4 / 5;
+}
+#groupTvRecs {
+  grid-row: 5 / 6;
+}
+#groupBookRecs {
+  grid-row: 6 / 7;
+}
+#groupMusicRecs {
+  grid-row: 7 / 8;
+}
+#groupBuyProducts {
+  grid-row: 8 / 9;
+}
+#groupQuiz {
+  grid-row: 9 / 10;
+}
+#groupCommentsForm {
+  grid-row: 10 / 11;
+}
+#groupStudentDetails {
+  grid-row: 11 / 12;
+}
