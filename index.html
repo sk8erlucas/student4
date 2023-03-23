@@ -12,30 +12,31 @@
 
 <body>
     <header class="navbar">
-        <nav>
-            <!--<div class="logo-wrapper">
-                <a  href=home.html><img  class="logo" src="assets/logo.png" alt="RAM(e)N logo with chopsticks and noodles"/></a>
-            </div>-->
-
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="movie.html">Movies</a></li>
-                <li><a href="tv.html">TV Shows</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="places.html">Places</a></li>
-                <li><a href="food.html">Food</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html">Student Details</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="tv.html">TV Shows</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Student Details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
     
     <!-- SECTION SITEMAP-->
     <div class="sitemap">
-        <img src="assets/Ramen Sitemap.png"/>
+        <img src="assets/Ramen Sitemap.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_self" alt="Home" title="Home" href="/home" coords="531,227,137" shape="circle">
+            <area target="_self" alt="Movies" title="Movies" href="/link1" coords="6,511,107,544" shape="rect">
+            <area target="_self" alt="TV" title="TV" href="/link2" coords="119,567,231,602" shape="rect">
+            <area target="" alt="Books" title="Books" href="/link3" coords="260,570,365,601" shape="rect">
+            <area target="" alt="Music" title="Music" href="/link4" coords="341,509,447,543" shape="rect">
+        </map>
     </div>
 
     <section class="gallery">
